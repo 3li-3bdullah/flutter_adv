@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,6 +8,10 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+   getImage(){
+    File file = File('');
+  return Image.file(file);  
+  }
 
   // This widget is the root of your application.
   @override
