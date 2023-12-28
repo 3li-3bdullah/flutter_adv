@@ -1,6 +1,6 @@
 class Apiconstants {
   static const String baseUrl = "your base url";
-  static const String loging = "auth/login";
+  static const String login = "auth/login";
 }
 
 class ApiErrors {
