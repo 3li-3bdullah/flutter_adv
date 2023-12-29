@@ -1,5 +1,5 @@
 class Apiconstants {
-  static const String baseUrl = "your base url";
+  static const String baseUrl = "your base url/";
   static const String login = "auth/login";
 }
 
