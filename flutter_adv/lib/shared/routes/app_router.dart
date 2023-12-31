@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_adv/modules/home/view/home_screen.dart';
+import 'package:flutter_adv/modules/login/view/login_screen.dart';
+import 'package:flutter_adv/modules/onboarding/onboarding_screen.dart';
 import 'package:flutter_adv/shared/routes/routes.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -13,19 +16,18 @@ class AppRouter {
     switch (settings.name) {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(
-          builder: (_) => const SizedBox(),
+          builder: (_) => const OnboardingScreen(),
         );
       case Routes.loginScreen:
         return MaterialPageRoute(
-          builder: (_) => const SizedBox(),
-          // BlocProvider(
-          //   create: (context) => getIt<LoginCubit>(),
-          //   child: const SizedBox(),
-          // ),
+          builder: (_) =>  BlocProvider(
+            create: (context) => getIt<LoginCubit>(),
+            child: const LoginScreen(),
+          ),
         );
         case Routes.homeScreen:
         return MaterialPageRoute(
-          builder: (_) => const SizedBox(),
+          builder: (_) => const HomeScreen(),
         );
       default:
         return MaterialPageRoute(
