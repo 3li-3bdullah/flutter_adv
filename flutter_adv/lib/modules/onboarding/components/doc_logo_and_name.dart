@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../shared/theme/styles.dart';
+
 class DocLogoAndName extends StatelessWidget {
   const DocLogoAndName({super.key});
 
